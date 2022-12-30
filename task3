@@ -1,0 +1,120 @@
+
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    .col1{
+        float: left;
+      width: 10%;
+      padding: 4px;
+      height: 50px;
+      margin:20px;
+      text-align: center;
+      color: white;
+    }
+    .col2{
+        float:left;
+      width: 10%;
+      padding: 4px;
+      height: 50px;
+      margin:20px;
+      text-align: center;
+      color:white;
+    }
+    .col3{
+        float: right;
+      width: 10%;
+      padding: 4px;
+      height: 50px;
+      margin:20px;
+      text-align: center;
+      color:white;
+    }
+    .column1 {
+      float: left;
+      width: 30%;
+      padding: 10px;
+      height: 350px;
+      margin:50px;
+      text-align: center;
+    }
+    .column2{
+        text-align: center;
+        float: left;
+      width: 50%;
+      padding: 10px;
+      height: 350px;
+      margin:50px;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .alert {
+  padding: 20px;
+  background-color: #f0ecec;
+  color: rgb(15, 9, 9);
+}
+
+.closebtn {
+  background-color: #e70909;
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+     h2{
+            background-color: aliceblue;
+        }
+        body{
+            background-color: rgb(21, 21, 100);
+        }
+        
+        button{
+            width: 250px;
+            height: 50px;
+            padding: auto;
+            background-color: rgb(53, 222, 16);
+        }
+    </style>
+    </head>
+    <body>
+            <h2>To-Do List Web App</h2>
+    <div class="row">
+      <div class="column1" style="background-color:white;">
+     <textarea width="100" placeholder="Title" cols="30" required></textarea><br><br>
+    <textarea width="100" placeholder="Description" cols="30" rows="10" required></textarea><br><br>
+     <button type="button" width="10px">Submit</a></button>
+      </div>
+    <div class="column2">
+        <div class="row">
+            <div class="col1">Title</div>
+            <div class="col2">Description</div>
+            <div class="col3">Delete</div>
+      </div>
+      <hr>
+      <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <pre>title                    short description</pre>
+    </div><br><br>
+    <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <pre>title                   next short description</pre>
+    </div>
+    </div>
+    </script>
+    </body>
+    </html>
+    
